@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbl_pais: UILabel!
+    @IBOutlet weak var lbl_hamburguesa: UILabel!
+    
+    let hamburguesa = ColeccionDeHamburguesas()
+    let pais = ColeccionDePaises()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func cambiarEtiquetas() {
+        lbl_pais.text = pais.obtenerPais()
+        lbl_hamburguesa.text = hamburguesa.obtenerHamburguesa()
+    }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ColeccionDePaises{
 
@@ -33,6 +34,34 @@ class ColeccionDePaises{
     
     func obtenerPais() -> String {
         return paises[Int(arc4random()) % paises.count]
+    }
+    
+}
+
+class ColeccionDeHamburguesas{
+    var hamburguesas : [String] = ["Royal",
+                                   "Simple",
+                                   "Vegetariana",
+                                   "Doble",
+                                   "Con Queso",
+                                   "Extra Queso",
+                                   "Napolitana",
+                                   "Mata Hambre",
+                                   "King",
+                                   "Terminator",
+                                   "Chorizo",
+                                   "Definitiva",
+                                   "Romana",
+                                   "Rusa",
+                                   "Express",
+                                   "BBQ",
+                                   "Hot Dog",
+                                   "Gigante",
+                                   "Tocino",
+                                   "Especial"]
+    
+    func obtenerHamburguesa() -> String {
+        return hamburguesas[Int(arc4random()) % hamburguesas.count]
     }
     
 }
