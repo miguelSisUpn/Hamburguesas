@@ -32,9 +32,7 @@ class ColeccionDePaises{
                              "República Dominicana"]
     
     func obtenerPais() -> String {
-        let n = self.paises.count
-        let random = Int(arc4random() % n)
-        return self.paises[random]
+        return paises[Int(arc4random()) % paises.count]
     }
     
 }
